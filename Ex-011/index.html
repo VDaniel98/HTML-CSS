@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Abrir a imagem em dispositivos diferentes.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir audio em html 5</p>
+    <audio src="midia/GTA Type Beat - Dyalla.mp3" controls></audio>
+    <!-- MP3 WAV OGG/ Tentar evitar arquivo WAV pois é pesado-->
+
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/Motherland - Ryan Stasik, Kanika Moore.mp3" type="audio/mpeg">
+        <p>Infelizmente o seu navegador não consegue reproduzir o audio, clique aqui para baixar o audio</p>
+    </audio>
+</body>
+</html>
